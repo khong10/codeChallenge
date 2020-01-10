@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'CTVSans-Bold';
+  src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTVSans-Bold.otf?s=2_6780') format('opentype');
+  src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Bold.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Bold.ttf?s=2_6780') format('truetype');
+  font-weight: normal;
+  font-style:normal;
+}
+@font-face {
+  font-family: 'CTVSans-Regular';
+  src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTVSans-Regular.otf?s=2_6780') format('opentype');
+  src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Regular.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Regular.ttf?s=2_6780') format('truetype');
+  font-weight: normal;
+  font-style:normal;
+}
+
+@font-face {font-family: 'webIconFont';
+  src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.eot?s=2_6780');
+  src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.woff?s=2_6780') format('woff'),
+  url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.ttf?s=2_6780') format('truetype'),
+  url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.svg#webiconfont?s=2_6780') format('svg');
+  font-weight: normal;
+  font-style:normal;
+}
+
+  .wrapper-box { 
+    margin-top: 20%; 
+    float:left; 
+    width:100%; 
+    height:500px; 
+  }
+
+  a {
+    font-family: "CTVSans-Regular", arial, sans-serif;
+    font-size: 0.8rem;
+    color: black;
+  }
+  a:hover {
+    color: #005fff;
+  }
+
+  h3 {
+    display: block;
+    text-transform: uppercase;
+    font-family: "CTVSans-Bold", arial, sans-serif;
+    color: #4a4a4a;
+    font-weight: 550;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #title {
+    font-family: 'webIconFont', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5%;
+    color: #4a4a4a;
+  }
+  
+  #content {
+    font-family: 'webIconFont', Arial, sans-serif;
+    font-size: 11px;
+    padding-left: 0;
+    margin-top: 5px;
+    color: #4a4a4a;
+  }
+  
+  .border-title {
+     font-family: 'webIconFont', Arial, sans-serif;
+     font-size: 10px;
+     float:left; 
+     height:5px; 
+     margin-top:3%;
+     width:90%; 
+     text-align:left; 
+    }
+    
+  .box-content {
+    float:left; 
+    width:100%; 
+    height: 330px; 
+    border-left: hidden; 
+    border-right: hidden; 
+    border-bottom: hidden; 
+    }
+
+    .mat-card {
+      border-left: none;
+      border-right: none;
+      border-radius: unset;
+      border-bottom: 1px solid #d8d8d8;
+      box-shadow: none;
+      padding: 15px 0 5px 0;
+    }
+
+    .mat-card-content {
+      font-family: "CTVSans-Bold", arial, sans-serif;
+      font-weight: 400;
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    .mat-card-image {
+      width: 100%;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 992px){
+    
+      .wrapper-box { 
+        margin: 25px 0 25px 0; 
+        float:left; 
+        width:100%; 
+        max-height:600px; 
+      }
+
+      .box-content {
+        float:left; 
+        width:100%; 
+        max-height: 600px; 
+        border-left: hidden; 
+        border-right: hidden; 
+        border-bottom: hidden; 
+        }
+
+      h3 {
+        display: block;
+        text-transform: uppercase;
+        font-family: "CTVSans-Bold", arial, sans-serif;
+        color: #4a4a4a;
+        font-weight: 550;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      .mat-card {
+        border-left: none;
+        border-right: none;
+        border-radius: unset;
+        border-bottom: 1px solid grey;
+        box-shadow: none;
+        padding: 15px 0 5px 0;
+      }
+  
+      .mat-card-content {
+        font-family: "CTVSans-Bold", arial, sans-serif;
+        font-weight: 400;
+        padding: 0;
+        margin-bottom: 0;
+      }
+    
+      a {
+        font-family: "CTVSans-Regular", arial, sans-serif;
+        font-size: 0.8rem;
+        color: black;
+      }
+
+      a:hover {
+        color: #005fff;
+      }
+
+      .mat-card-image {
+        width: 100%;
+        margin: 0;
+      }
+
+      p#content {
+        font-family: "CTVSans-Bold", arial, sans-serif;
+        font-size: 1rem;
+        margin: 5px 0 5px 0;
+        padding: 5px 0 5px 0;
+
+      }
+    }

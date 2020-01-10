@@ -1,0 +1,84 @@
+
+@font-face {font-family: 'Flama-Medium';src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/Flama-Medium.eot?s=2_6780');src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/Flama-Medium.eot?#iefix&s=2_6780') format('embedded-opentype'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/Flama-Medium.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/Flama-Medium.svg#font&s=2_6780') format('svg');font-weight: normal;font-style:normal;}
+@font-face {font-family: 'CTVSans-Black';src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTVSans-Black.otf?s=2_6780') format('opentype');src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Black.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Black.ttf?s=2_6780') format('truetype');font-weight: normal;font-style:normal;}
+@font-face {font-family: 'CTVSans-Bold';src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTVSans-Bold.otf?s=2_6780') format('opentype');src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Bold.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Bold.ttf?s=2_6780') format('truetype');font-weight: normal;font-style:normal;}
+@font-face {font-family: 'CTVSans-Regular';src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTVSans-Regular.otf?s=2_6780') format('opentype');src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Regular.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Regular.ttf?s=2_6780') format('truetype');font-weight: normal;font-style:normal;}
+@font-face {font-family: 'webIconFont';src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.eot?s=2_6780');src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.ttf?s=2_6780') format('truetype'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.svg#webiconfont?s=2_6780') format('svg');font-weight: normal;font-style:normal;}
+
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+} 
+
+html, body, span, h1, h2, h3, h4, h5, h6, p, a, em, img, center, canvas, nav, section {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+}
+
+hr {
+    border: 1px solid #005fff;
+    background-color: #005fff;
+}
+
+.center {
+    margin: 0 auto;
+    width:60%;
+}
+
+
+.col {
+    width:100%;
+}
+
+.content {
+    margin: 5px 0px 5px 0px;
+}
+
+div.col-sm-6 {
+    padding: 3% 1% 0;
+}
+.col-sm-3 {
+    padding: 3% 1% 0;
+}
+
+@media screen and (max-width: 992px){
+    div {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+    }
+
+    .col-wrapper {
+        margin: 6px 10px 0 10px;
+    }
+
+    .center {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .content {
+        margin:0;
+        width: 100%;
+    }
+
+    .col-sm-6 {
+        margin-top: 10px 0 5px 0;
+    }
+    .col-sm-3 {
+        margin-top: 10px 0 5px 0;
+    }
+}   
+

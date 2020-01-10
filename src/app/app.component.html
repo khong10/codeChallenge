@@ -1,0 +1,40 @@
+<!--                   Header
+------------------------------------------------------
+       component1       | component2 | component 3
+------------------------------------------------------
+Consisting of three components which are main cover, second article and Top story
+-->
+<div class="col-wrapper left clearfix" id="main">
+  <div class="row">
+    <div class="center">
+      <!--Header Start-->
+      <div class="col">
+        <app-header></app-header>
+      </div>
+      <!--Header Start-->
+        <hr>
+        <div class="content">
+          <app-tracking></app-tracking>
+          <!--Body Start-->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <app-main-cover></app-main-cover>
+              </div>
+              <div class="col-sm-3">
+                <app-sub-cover></app-sub-cover>
+              </div>
+              <div class="col-sm-3">
+                <app-most-recent></app-most-recent>
+              </div>
+            </div>
+          </div>
+          <!--Body End-->
+        </div>
+        <!--Footer Start-->
+        <!--Footer only displaying while it is on mobile view-->
+        <app-footer></app-footer> 
+        <!--Footer Start-->         
+    </div>
+  </div>
+</div>

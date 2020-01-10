@@ -1,0 +1,125 @@
+@font-face {font-family: 'webIconFont';
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.eot?s=2_6780');
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.woff?s=2_6780') format('woff'),
+    url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.ttf?s=2_6780') format('truetype'),
+    url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/webiconfont-v6.svg#webiconfont?s=2_6780') format('svg');
+    font-weight: normal;
+    font-style:normal;
+  }
+
+  @font-face {
+    font-family: 'CTVSans-Bold';
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTVSans-Bold.otf?s=2_6780') format('opentype');
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Bold.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Bold.ttf?s=2_6780') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+  }
+
+ .wrapper-box { 
+   margin-top: 5px; 
+   float:left; 
+   width:100%; 
+   max-height: 500px; 
+ }
+ 
+ .box-content {
+  float:left; 
+  width:100%; 
+  height: 380px; 
+  border-left: hidden; 
+  border-right: hidden; 
+  border-bottom: hidden; 
+  }
+ 
+ .mat-card {
+  background-color: #f0f0f0;
+  border: 0;
+  border-radius: unset;
+  box-shadow: none;
+  padding: 15px 0 5px 0;
+  margin: 30% 0 0 0;
+}
+
+.mat-card-content {
+  font-family: "CTVSans-Bold", arial, sans-serif;
+  font-weight: 550;
+  padding: 0;
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+img {
+  width: 100% !important;
+  margin: 0;
+}
+
+p#content {
+  font-family: "CTVSans-Bold", arial, sans-serif;
+  font-size: 1rem;
+  margin: 3px 0 2px 0;
+  padding: 3px 0 2px 0;
+}
+
+#content {
+   font-family: 'webIconFont', Arial, sans-serif;
+   font-size: 12px;
+   margin-top: 7%;
+ }
+
+  @media screen and (max-width: 992px){
+
+    .wrapper-box { 
+      margin-top: 5px; 
+      float:left; 
+      width:100%; 
+      max-height: 500px; 
+      border-bottom: solid 1px;
+    }
+    
+    .box-content {
+     float:left; 
+     width:100%; 
+     height: 400px; 
+     border-left: hidden; 
+     border-right: hidden; 
+     border-bottom: hidden; 
+     }
+    
+    .mat-card {
+     background-color: #f0f0f0;
+     border: 0;
+     border-radius: unset;
+     box-shadow: none;
+     padding: 15px 0 5px 0;
+     margin: 0;
+   }
+
+   img {
+    width: 100% !important;
+    margin: 0;
+  }
+   
+   .mat-card-content {
+     font-family: "CTVSans-Bold", arial, sans-serif;
+     font-weight: 500;
+     padding: 0;
+     margin: 10px 5px 15px 5px;
+     font-size: 1rem;
+   }
+
+   p#content {
+     font-family: "CTVSans-Bold", arial, sans-serif;
+     font-size: 1rem;
+     margin: 3px 0 2px 0;
+     padding: 3px 0 2px 0;
+   }
+   
+   #content {
+      font-family: 'webIconFont', Arial, sans-serif;
+      font-size: 12px;
+      margin-top: 7%;
+    }
+
+
+}

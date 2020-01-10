@@ -1,0 +1,30 @@
+ @font-face {
+    font-family: 'CTVSans-Bold';
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTVSans-Bold.otf?s=2_6780') format('opentype');
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Bold.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Bold.ttf?s=2_6780') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+
+ p.title {
+    font-family: 'CTVSans-Bold', Arial, Helvetica, sans-serif;
+    margin: 0 0 0 5px;
+}
+
+.nav1 {
+    display: left; 
+    height: auto;
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+    padding-top:100px;
+ }
+
+ @media screen and (min-width: 992px){
+
+    .nav1 {
+        display: none;
+        padding: 0;
+    }
+
+}

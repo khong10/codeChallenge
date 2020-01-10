@@ -1,0 +1,30 @@
+<!--Election ballot tracking bar graph (mobile/desktop)-->
+<div class="col-wrapper left clearfix">
+    <div id="fullChart" class="all-loaded">
+        <div id="chartHeader" class="unselectable">
+            <div id="chartTitle">
+                <div>
+                    Nanos Daily Ballot Tracking
+                </div>
+            </div>
+            <div id="chartUpdate">Updated at 11/16/2018</div>
+        </div>
+        <div id="chartBody">
+            <div class="bigDiv" #test *ngFor="let ele of election">
+                <div class="barChangeDiv" style="margin: 0px;">
+                    <div class="barContainer" [style.width.%]="ele.rate">
+                        <div class="bar" [style.background-color]="ele.flagColor"></div>
+                    </div>
+                    <div class="changeText unselectable" style="top: 0px;">
+                        <div [ngClass]="ele.diff > 0 ? 'arrowImg upArrow' :'arrowImg downArrow'"></div>
+                        <div class="changeTextDiv">{{ele.diff}}</div>
+                    </div>
+                </div>
+                <div class="partyNumDiv">
+                    <div class="textDiv unselectable" style="font-size: 17px; width: 40px;">{{ele.party}}</div>
+                    <div class="numDiv unselectable" style="font-size: 16px;">{{ele.currBallot}}%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

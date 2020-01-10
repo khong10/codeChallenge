@@ -1,0 +1,310 @@
+/* bell font */
+@font-face {
+    font-family: 'CTVSans-Black';
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTVSans-Black.otf?s=2_6780') format('opentype');
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Black.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Black.ttf?s=2_6780') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'CTVSans-Bold';
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTVSans-Bold.otf?s=2_6780') format('opentype');
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Bold.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Bold.ttf?s=2_6780') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'CTVSans-Regular';
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTVSans-Regular.otf?s=2_6780') format('opentype');
+    src: url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Regular.woff?s=2_6780') format('woff'),url('https://static.ctvnews.ca/bellmedia/ctvnews/css/webfonts/CTV_Sans-Regular.ttf?s=2_6780') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+/* Graph Style Start */
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* Desktop View start */
+
+    #fullChart {
+        opacity: 0;
+        position: relative;
+        max-height: 0;
+        transition: max-height 0.5s ease(0, 1, 0, 1);
+   }
+    #fullChart.all-loaded {
+        opacity: 1;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+        font-family: 'CTVSans-Regular', 'CTV Sans', Arial, Helvetica, sans-serif;
+        min-width: 300px;
+        background-color: #F8F8F8;
+   }
+    #chartHeader {
+        display: grid;
+        grid-template-columns: 130px 5fr 140px;
+        color: #4A4A4A;
+        background-color: #F8F8F8;
+        padding: 15px 20px 25px;
+   }
+    #chartTitle {
+        font-family: 'CTVSans-Black', 'CTV Sans', Arial, Helvetica, sans-serif;
+        grid-column: 2 / 3;
+        position: relative;
+        display: block;
+        margin: 0;
+        text-align: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        width: 100%;
+   }
+    #chartUpdate {
+        text-align: right;
+        font-family: "Arial", sans-serif;
+        font-size: 12px;
+        padding: 5px 0px 0px;
+   }
+    #chartBody {
+        display: flex;
+        height: 60px;
+        padding: 2px 0px 35px;
+        position: relative;
+        background: #F7F7F7;
+        white-space: pre-wrap;
+        overflow: hidden;
+        margin: 0 auto;
+        line-height: 19px;
+        justify-content: space-around;
+   }
+    .bigDiv {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        position: relative;
+        overflow: visible;
+   }
+    .barChangeDiv {
+        margin:0px;
+        width:300%;
+   }
+    .barContainer {
+        height: 13px;
+        text-align: left;
+        float: left;
+   }
+    .bar {
+        height: 13px;
+        text-align: left;
+        border-radius: 2px;
+        width: 100%;
+   }
+    .changeText {
+        font-size: 14px;
+        color: #595959;
+        float: left;
+        padding: 0 5px 0 0;
+        margin: -3px 0 0 5px;
+        position: relative;
+        top: 0px;
+   }
+    .partyNumDiv {
+        font-size: 1rem;
+   }
+    .textDiv {
+        width: 40px;
+        display: inline-block;
+        font-size: 1rem;
+   }
+    .numDiv {
+        font-family: 'CTVSans-Black', 'CTV Sans', Arial, Helvetica, sans-serif;
+        color: #4A4A4A;
+        display: inline-block;
+        font-size: 1rem;
+        margin: 0 0 0 5px;
+   }
+
+/* Desktop View end */
+
+/* Mobile View start */
+
+@media screen and (max-width: 992px ){
+    .col-wrapper {
+        margin: 6px 0px 0 0px;
+   }
+    #fullChart {
+        position: relative;
+   }
+    #chartHeader {
+        padding: 15px 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        color: #4A4A4A;
+        background-color: #F8F8F8;
+   }
+    #chartTitle {
+        font-family: 'CTVSans-Black', 'CTV Sans', Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        grid-column: 1 / 2;
+        text-align: justify;
+        margin: 0px;
+        width: 100%;
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+   }
+    #chartUpdate {
+        font-family: 'CTVSans-Black', 'CTV Sans', Arial, Helvetica, sans-serif;
+        text-align: left;
+        padding: 3px 0px 0px;
+        grid-row: 2 / 3;
+        font-family: "Arial", sans-serif;
+        font-size: 0.9rem;
+   }
+    #chartBody {
+        display: grid;
+        height: 150px;
+        padding: 0px 10px 35px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 10px);
+        gap: 12px;
+        position: relative;
+        background: #F7F7F7;
+        white-space: pre-wrap;
+        overflow: hidden;
+        margin: 0 auto;
+        line-height: 19px;
+   }
+    .bigDiv {
+        display: grid;
+        overflow: visible;
+        grid-template-rows: 15px;
+        position: static;
+        width: 100%;
+        grid-template-columns: 95px 1fr;
+   }
+    .barChangeDiv {
+        margin: 5px 0px 0px;
+        grid-area: 1 / 2 / 2 / 3;
+        width: 200%;
+   }
+    .barContainer {
+        height: 10px;
+        text-align: left;
+        float: left;
+   }
+    .bar {
+        width: 100%;
+        background: rgb(26, 71, 130);
+        height: 10px;
+        text-align: left;
+        border-radius: 2px;
+   }
+    .changeText {
+        top: -1px;
+        font-size: 14px;
+        color: #595959;
+        float: left;
+        padding: 0 5px 0 0;
+        margin: -3px 0 0 5px;
+        position: relative;
+   }
+    .partyNumDiv {
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 1rem;
+   }
+    .textDiv {
+        width: 40px;
+        display: inline-block;
+        font-size: 1rem;
+   }
+    .numDiv {
+        font-family: 'CTVSans-Black', 'CTV Sans', Arial, Helvetica, sans-serif;
+        color: #4A4A4A;
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0 0 0 5px;
+   }
+}
+/* Mobile View end */
+
+.invisible {
+    display: none;
+}
+.smallBar {
+    height: 3px;
+    width: 40%;
+    margin: 3px -6px 0 0;
+    float:right;
+}
+.arrowSpan {
+    font-size: 12px;
+    margin: 0px 3px 0 0;
+}
+.textSpan {
+    font-weight: normal;
+}
+.unselectable {
+    -webkit-user-select: none;
+   /* Safari */
+    -moz-user-select: none;
+   /* Firefox */
+    -ms-user-select: none;
+   /* IE10+/Edge */
+    user-select: none;
+   /* Standard */
+}
+.arrowImg {
+    margin: 1px 3px 0 0;
+    float: left;
+    position: relative;
+}
+.upArrow {
+    width: 10px;
+    height: 14px;
+    top: 1px;
+    background-image: url(..\..\assets\icons\arrow\arrow_up@1x.png);
+    //background-image: url("https://www.ctvnews.ca/polopoly_fs/1.4551650.1565896642!/httpImage/image.png") 
+}
+.downArrow {
+    width: 10px;
+    height: 14px;
+    top: 1px;
+    background-image: url(..\..\assets\icons\arrow\arrow_down@1x.png) 
+}
+.changeTextDiv {
+    float: left;
+}
+.clear {
+    clear: both;
+}
+.space {
+    margin: 0 0 15px 0;
+}
+@keyframes barAnimation {
+    from {
+        opacity: 0;
+        width: 0%;
+   }
+    to {
+        opacity: 1;
+        width: 100%;
+   }
+}
+.animate {
+    animation-name: barAnimation;
+    animation-duration: 1s;
+}
+/* Graph Style Start */
